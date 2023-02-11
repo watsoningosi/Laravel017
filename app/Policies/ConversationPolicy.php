@@ -17,7 +17,7 @@ class ConversationPolicy
         }
     }
 
-    public function update(User $user, Conversation $conversation)
+    public function create(User $user, Conversation $conversation)
     {
         return $conversation->user->is($user);
     }
